@@ -17,7 +17,7 @@ You can also provide an optional function that will be evaluated when the media 
 
 ```javascript
 var isTouch = function() {
-    $('html').hasClass('touch');
+    return $('html').hasClass('touch');
 }
 rjs.defineBreakpoint('touch-breakpoint-small',	"only screen and (max-width: 767px)", isTouch);
 ```
